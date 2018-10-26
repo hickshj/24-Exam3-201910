@@ -2,9 +2,9 @@
 Exam 3, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  October 2018.
+         their colleagues and Hunter Hicks.  October 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -93,7 +93,15 @@ def problem2(sequence):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    i = 0
+    q = 0
+    for k in range(len(sequence)):
+        if sequence[k] < 0:
+            sequence[k] = sequence[k] * -1
+        if sequence[k] > i:
+            i = sequence[k]
+            q = k
+    return q
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
