@@ -84,7 +84,10 @@ And this one for n=14:
     #   you must NOT use string multiplication.
     ####################################################################
     for k in range(n):
-        for i in range()
+        for i in range(k + 1):
+            q = "*"
+            print(q, end="")
+        print()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
